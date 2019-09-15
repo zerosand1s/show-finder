@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { searchShowAction } from '../actions/searchShowAction';
+import { Container, Input, Button } from '@material-ui/core';
 
 class Search extends React.Component {
 
@@ -21,10 +22,21 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div>
-        <input type="text" value={this.state.query} onChange={this.handleChange.bind(this)}></input>
-        <button type="submit" onClick={this.handleClick.bind(this)}>Search</button>
-      </div>
+      <Container>
+        <Container maxWidth="md">
+          <Input
+            fullWidth={true}
+            value={this.state.query}
+            onChange={this.handleChange.bind(this)}
+            placeholder='Enter show name'
+            autoFocus={true}
+          >
+          </Input>
+        </Container>
+        <Container maxWidth="sm">
+          <Button onClick={this.handleClick.bind(this)} disableRipple={true} >Search</Button>
+        </Container>
+      </Container>
     );
   }
 }
