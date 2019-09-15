@@ -16,7 +16,9 @@ const searchShowReducer = (state = {}, action) => {
       });
 
     default:
-      return state;
+      return Object.assign({}, state, {
+        shows: []
+      });
   }
 };
 
