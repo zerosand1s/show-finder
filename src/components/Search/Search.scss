@@ -1,0 +1,25 @@
+.root {
+	background-color: white;
+	margin: 3% 0;
+}
+
+.grid-container {
+	padding: 10px;
+	vertical-align: middle;
+
+	.input-grid {
+		margin-right: 25px;
+	}
+
+	.btn-grid {
+		background-color: blue;
+		text-align: center;
+
+		button {
+			font-size: 16px;
+			padding: 0;
+			color: white;
+			vertical-align: top;
+		}
+	}
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Show from './Show';
+import Show from '../Show/Show';
 import uuid4 from 'uuid/v4';
 import { Container, List } from '@material-ui/core';
 

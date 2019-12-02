@@ -1,0 +1,26 @@
+.list-item {
+	// margin: 8px 0 12px 0;
+
+  .show-image {
+		height: 225px;
+		object-fit: cover;
+	}
+}
+
+.grid-container {
+	vertical-align: top;
+
+	.grid-item-image {
+		margin-right: 10px;
+	}
+
+	.grid-item-paper {
+		margin-left: 10px;
+	}
+
+	.paper {
+		padding: 10px 0 0 35px;
+		background-color: inherit;
+		height: 215px;
+	}
+}

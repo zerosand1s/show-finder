@@ -5,9 +5,10 @@ export function searchShowAction(title) {
       requestSent: true
     });
 
-    return fetch('http://api.tvmaze.com/search/shows?q=' + title)
+    return fetch('http://api.tvmaze.com/search/shows?q=sherlock')
       .then(response => response.json())
       .then(resJson => {
+        console.log(resJson);
         dispatch({
           type: 'SEARCH_SHOWS_SUCCESS',
           shows: resJson
